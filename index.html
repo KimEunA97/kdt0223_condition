@@ -19,8 +19,25 @@
 
   <script>
     let menu = window.document.getElementById('menu');
-    console.dir(menu.children);
-    console.log(menu.children[0]);
+    console.dir(menu.children); //배열
+    console.log(menu.children[0]); //검증
+    console.dir(menu.children[0].style);
+
+    for (let index = 0; index < menu.children.length; index++) {
+      //비교 연산자
+      if (menu.children[index].textContent === "items-3") {
+        
+        menu.children[index].style.color = "red";
+
+      }
+      else {
+        
+        menu.children[index].style.color = "blue";
+
+      }
+
+
+    }
 
   </script>
 
